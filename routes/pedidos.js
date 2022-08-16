@@ -28,7 +28,7 @@ router.get('/:id_pedido', (req, res, next) => {
 //delcaração do DELETE || deleção de um pedido
 router.delete('/', (req, res, next) => {
 	res.status(201).send({
-		message: 'Pedido excluido',
+		message: 'Pedido excluído',
 	});
 });
 
