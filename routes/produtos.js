@@ -5,14 +5,14 @@ const router = express.Router();// delcaração do router
 // delcaração do metodo GET || retorna todos os produtos
 router.get('/', (req, res, next) => {
 	res.status(200).send({
-		message: 'Usando metodo GEt dentro da rota produtos',
+		message: 'Retorna todos os produtos',
 	});
 });
 
 //INsere um produto
 router.post('/', (req, res, next) => {
 	res.status(201).send({
-		message: 'Usando o Post dentro da rota de produtos',
+		message: 'Insere produto',
 	});
 });
 
@@ -35,14 +35,14 @@ router.get('/:id_produto', (req, res, next) => {
 //delcaração do PATCH || atualiza o produto
 router.patch('/', (req, res, next) => {
 	res.status(201).send({
-		mensagem: 'Usando o PATCH dentro da rota de produtos',
+		mensagem: 'Produto alterado',
 	});
 });
 
 //delcaração do DELETE || deleção de um produto
 router.delete('/', (req, res, next) => {
 	res.status(201).send({
-		message: 'Usando o DELETE dentro da rota de produtos',
+		message: 'Produto excluido',
 	});
 });
 
