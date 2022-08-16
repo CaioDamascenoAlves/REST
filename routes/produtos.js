@@ -11,8 +11,13 @@ router.get('/', (req, res, next) => {
 
 //INsere um produto
 router.post('/', (req, res, next) => {
+	const produto = {
+		nome: req.body.nome,
+		ppreco: req.body.preco
+	}
 	res.status(201).send({
 		message: 'Insere produto',
+		produtoCriado: produto
 	});
 });
 

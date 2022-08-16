@@ -11,8 +11,13 @@ router.get('/', (req, res, next) => {
 
 //INsere um pedido
 router.post('/', (req, res, next) => {
+	const pedido = {
+		id_produto: req.body.id_pedido,
+		quantidade: req.body.quantidade
+	}
 	res.status(201).send({
 		message: 'O pedido foi criado',
+		pedidoCriado: pedido
 	});
 });
 
